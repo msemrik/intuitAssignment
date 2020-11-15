@@ -1,0 +1,7 @@
+{
+  "timestamp" : "2020-11-08T07:41:02.098+00:00",
+  "status" : 415,
+  "error" : "Unsupported Media Type",
+  "message" : "",
+  "path" : "/cases"
+}

@@ -1,0 +1,223 @@
+GET http://localhost:8080/refresh
+
+<> 2020-11-08T030634.200.json
+
+###
+
+GET http://localhost:8080/refresh
+
+<> 2020-11-08T030341.500.txt
+
+###
+
+GET http://localhost:8080/refresh
+
+<> 2020-11-08T030052.200.json
+
+###
+
+GET http://localhost:8080/refresh
+
+<> 2020-11-08T025739.500.txt
+
+###
+
+GET http://localhost:8080/refresh
+
+<> 2020-11-08T025428.500.txt
+
+###
+
+GET http://localhost:8080/refresh
+
+<> 2020-11-08T014153.500.txt
+
+###
+
+GET http://localhost:8080/refresh
+
+###
+
+GET http://localhost:8080/refresh
+
+<> 2020-11-08T010848.500.html
+
+###
+
+GET http://localhost:8080/refresh
+<> 2020-11-08T010813.500.html:
+<> 2020-11-08T094948.400.json:
+<> 2020-11-08T094939.400.json:
+
+<> 2020-11-08T010838.400.html
+
+###
+
+GET http://localhost:8080/refresh
+Content-Type: application/json
+
+{
+"product": "Blue",
+"provider": "content"
+}
+
+<> 2020-11-08T010813.500.html
+
+###
+
+POST http://localhost:8080/cases
+Content-Type: application/json
+
+{
+  "product": "Blue",
+  "provider": "content"
+}
+
+###
+
+POST http://localhost:8080/cases
+Content-Type: application/json
+
+{
+  "product": "Blue",
+  "value": "content"
+}
+
+###
+
+POST http://localhost:8080/cases
+Content-Type: application/json
+
+{
+  "product": "Blue",
+  "value": "content"
+}
+
+###
+
+POST http://localhost:8080/cases
+Content-Type: application/json
+
+{
+  "product": Blue,
+  "value": "content"
+}
+
+<> 2020-11-08T094948.400.json
+
+###
+
+POST http://localhost:8080/cases
+Content-Type: application/json
+
+{
+  "product": 999,
+  "value": "content"
+}
+
+<> 2020-11-08T094939.400.json
+
+###
+
+POST http://localhost:8080/cases
+Content-Type: application/json
+
+{
+  "product": 999,
+  "value": "content"
+}
+
+###
+
+POST http://localhost:8080/cases
+Content-Type: application/json
+
+{
+  "product": 999,
+  "value": "content"
+}
+
+###
+
+POST http://localhost:8080/cases
+Content-Type: application/json
+
+{
+  "id": 999,
+  "value": "content"
+}
+
+###
+
+POST http://localhost:8080/cases
+Content-Type: application/json
+
+{
+  "id": 999,
+  "value": "content"
+}
+
+###
+
+POST http://localhost:8080/cases
+Accept: application/json
+
+<> 2020-11-08T094450.400.json
+
+###
+
+POST http://localhost:8080/cases
+Accept: application/json
+
+{}
+
+<> 2020-11-08T094444.415.json
+
+###
+
+POST http://localhost:8000/cases
+Accept: application/json
+
+{}
+
+###
+
+POST http://localhost:8080/cases
+Accept: application/json
+
+{}
+
+<> 2020-11-08T094310.415.json
+
+###
+
+POST http://localhost:8080/cases
+Accept: application/json
+
+{}
+
+<> 2020-11-08T094130.415.json
+
+###
+
+POST http://localhost:8080/cases
+Accept: application/json
+<> 2020-11-08T094102.415.json:
+<> 2020-11-08T094048.404.json:
+
+<> 2020-11-08T094115.400.html
+
+###
+
+POST http://localhost:8080/cases
+
+<> 2020-11-08T094102.415.json
+
+###
+
+POST http://localhost:8080
+
+<> 2020-11-08T094048.404.json
+
+###
+
