@@ -1,1 +1,0 @@
-´02:26:30.597 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'relevantProducts' of type [null] on target object [com.intuit.requesthandler.ApplicationRequestHandler@7ccd1d4c] or target class [class com.intuit.requesthandler.ApplicationRequestHandler] to value [[BLUE]]

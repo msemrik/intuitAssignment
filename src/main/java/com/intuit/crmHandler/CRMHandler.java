@@ -33,8 +33,10 @@ public abstract class CRMHandler {
     public List<Case> getListOfCases() throws ApiCallException, ConvertingResponseToDomainException {
         if(checkTimeout.shouldExecuteQuery(getIdentifier() + "FullAggregation", getMINIMUM_TIME_BETWEEN_CALLS())) {
             List<Case> caseList = convertResponseListToCases(apiCaller.getAPICallToURL(getURL()), getIdentifier());
+
             lastAggregationRepository.save(new LastAggregation(getIdentifier()  + "FullAggregation", LocalDateTime.now()));
-            return convertResponseListToCases(apiCaller.getAPICallToURL(getURL()), getIdentifier());
+
+            return caseList;
         } else {
             System.out.println("Won't do API call to CRM " + getIdentifier() + " as the time between calls restriction was not reached.");
             return new ArrayList<Case>();
@@ -50,7 +52,7 @@ public abstract class CRMHandler {
             }
             return cases;
         } catch (Exception e) {
-            throw new ConvertingResponseToDomainException("Error while trying to convert " + casesList + "to list of episodes.", e);
+            throw new ConvertingResponseToDomainException("Error while trying to convert " + casesList + "to list of cases.", e);
         }
     }
 
@@ -74,7 +76,7 @@ public abstract class CRMHandler {
                         ticketCreationDate,
                         lastModifiedDate);
         } catch (Exception e) {
-            throw new ConvertingResponseToDomainException("Error while trying to convert " + casesMap + "to episode.", e);
+            throw new ConvertingResponseToDomainException("Error while trying to convert " + casesMap + "to case.", e);
         }
     }
 }

@@ -48,6 +48,7 @@ GET https://intuit-assignment.herokuapp.com/refresh
 Configuration is placed in application.properties
 
 Relevant properties:<br>
+relevantProducts: only products that will be stored and retrieved in the app
 minimumRefreshTimeInMins: minimum time between two refresh calls<br>
 automaticRefreshInMinutes : maximum time without refresh<br>
 crm.crmname.identifier: CRM unique identifier<br>

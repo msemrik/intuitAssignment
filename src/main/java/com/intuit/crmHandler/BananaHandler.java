@@ -40,7 +40,7 @@ public class BananaHandler extends CRMHandler {
                 cases.addAll(super.convertResponseListToCases((ArrayList<Map<String, Object>>) listOfArrayOfCases.get(i), crm));
             }
         } catch (Exception e) {
-            throw new ConvertingResponseToDomainException("Error while trying to convert " + listOfArrayOfCases + "to list of episodes.", e);
+            throw new ConvertingResponseToDomainException("Error while trying to convert " + listOfArrayOfCases + "to list of cases.", e);
         }
 
         return cases;

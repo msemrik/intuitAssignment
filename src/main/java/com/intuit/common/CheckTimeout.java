@@ -14,7 +14,7 @@ public class CheckTimeout {
     @Autowired
     LastAggregationRepository lastAggregationRepository;
 
-    public boolean shouldExecuteQuery(String identifier, int timeThatShouldHadPassed) {
+    public boolean shouldExecuteQuery(String identifier, Integer timeThatShouldHadPassed) {
         LastAggregation lastAggregation = lastAggregationRepository.findById(identifier).orElse(new LastAggregation("", LocalDateTime.MIN));
 
         long minutes = lastAggregation.getLastAggregationDate().until( LocalDateTime.now(), ChronoUnit.MINUTES );
@@ -24,8 +24,4 @@ public class CheckTimeout {
             return true;
         }
     }
-
-//    public boolean shouldExecute() {
-//        return true
-//    }
 }
