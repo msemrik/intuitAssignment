@@ -1,4 +1,4 @@
-#Installation
+# Installation
 gradlew clean build
 
 The installation includes the in-memory database. 
@@ -9,22 +9,22 @@ Credentials: intuit<br>
 User: assignment<br>
 JDBC URL: should point to the folder where the project is hosted. Something like this: jdbc:h2:~\development\projects\intuitAssignment\database
 
-#Running the app
+# Running the app
 gradlew bootRun
 
-###Heroku
+### Heroku
 App is deployed in heroku. Can be find in following URL:
 
 https://intuit-assignment.herokuapp.com/
 
 # Usage
 The app contains two endpoints:
-###GET - /refresh
+### GET - /refresh
 Receives no parameters. 
 Example:
 https://intuit-assignment.herokuapp.com/refresh
 
-###GET - /myAggregatedHub
+### GET - /myAggregatedHub
 Receives JSON body as parameter for filtering. Every value is optional.
 <br>
  Empty object apply no filter to search.
@@ -55,7 +55,7 @@ crm.crmname.identifier: CRM unique identifier<br>
 crm.crmname.fullAggregationUrl: CRM Url for full aggregation<br>
 crm.crmname.minimumTimeBetweenFullAggregationInMins: CRM minimum time needed between full aggregation calls<br> 
 
-#Future implementations
+# Future implementations
 For adding new option calls to CRM the following changes are needed:
 
 ### CRMHandler interface and implementation of Interfaces 
@@ -65,8 +65,8 @@ If it follows the minimum time between calls policies could follow fullAggregati
 
 If it has a new restriction policy (as maximum concurrent thread) this could be independently defined in each CRM method.
 
-###ApplicationController class
+### ApplicationController class
 Add request body or param to refresh endpoint to determine type of refresh
  
-###ApplicationRequestHandler class
+### ApplicationRequestHandler class
 In method refreshDataForRequest determine which method in CRMHandler implementation should be called.
