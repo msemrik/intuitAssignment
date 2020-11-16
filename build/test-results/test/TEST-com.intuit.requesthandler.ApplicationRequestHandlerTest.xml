@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.intuit.requesthandler.ApplicationRequestHandlerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-11-16T00:26:25" hostname="DESKTOP-5VB2RF9" time="6.315">
+  <properties/>
+  <testcase name="shouldNotRefreshDataIsLessTimeThanMinimumRefreshTimePassedSinceLastRefresh()" classname="com.intuit.requesthandler.ApplicationRequestHandlerTest" time="5.468"/>
+  <testcase name="shouldRefreshDataIsLessTimeThanMinimumRefreshTimePassedSinceLastRefresh()" classname="com.intuit.requesthandler.ApplicationRequestHandlerTest" time="0.837"/>
+  <testcase name="getCasesForRequest()" classname="com.intuit.requesthandler.ApplicationRequestHandlerTest" time="0.01"/>
+  <system-out><![CDATA[02:26:30.597 [Test worker] DEBUG org.springframework.test.util.ReflectionTestUtils - Setting field 'relevantProducts' of type [null] on target object [com.intuit.requesthandler.ApplicationRequestHandler@7ccd1d4c] or target class [class com.intuit.requesthandler.ApplicationRequestHandler] to value [[BLUE]]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
